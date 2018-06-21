@@ -1,0 +1,40 @@
+@mixin component-countdown {
+	/* Countdown */
+	.countdown.section {
+		background-image: url(../img/countdown-bg.jpg);
+	}
+	.timer {
+		display: inline-block;
+		.timer-item {
+			/* coutndown blocks */
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			margin: 0 14px;
+			border: 2px solid $brand-white;
+			position: relative;
+			border-radius: 5px;
+			> div {
+				/* countdown block inner div */
+				display: table-cell;
+				vertical-align: middle;
+				height: 100px;
+				width: 100px;
+			}
+			.smalltext,
+			.digit {
+				display: block;
+				color: $brand-white;
+			}
+			.digit {
+				font-size: 47px;
+				line-height: 40px;
+			}
+			.smalltext {
+				color: rgba($brand-white,.7);
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+		}
+	}
+}
